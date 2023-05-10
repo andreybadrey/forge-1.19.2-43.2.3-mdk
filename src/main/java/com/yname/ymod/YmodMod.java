@@ -12,8 +12,14 @@ public class YmodMod
 
     public YmodMod()
     {
+
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
+        start();
+    }
+
+    public void start(){
+
     }
 
 }
